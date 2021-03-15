@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
-import { Box, Flex, Text, Spacer } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 
 // Custom UI components
 import CallToAction from "./CallToAction";

@@ -2,6 +2,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import { Box, Flex, Heading, Spacer } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import { CgProfile } from "react-icons/cg";
 
 // Styled components
 const Header = styled.header`
@@ -13,7 +14,7 @@ const Header = styled.header`
 export default function Navbar() {
   return (
     <Header>
-      <Flex bg="transparent">
+      <Flex bg="transparent" pr="4">
         <Box p="4" color="black">
           <Heading size="md">
             <Link href="/">
@@ -39,7 +40,7 @@ export default function Navbar() {
               <motion.a
                 style={{ cursor: "pointer" }}
                 whileHover={{ color: "#1687a7" }}
-                transition={{ duration: 0.45 }}
+                transition={{ duration: 0.42 }}
               >
                 Be a Turbler
               </motion.a>
@@ -50,9 +51,20 @@ export default function Navbar() {
               <motion.a
                 style={{ cursor: "pointer" }}
                 whileHover={{ color: "#1687a7" }}
-                transition={{ duration: 0.45 }}
+                transition={{ duration: 0.42 }}
               >
                 About
+              </motion.a>
+            </Link>
+          </Box>
+          <Box p="3">
+            <Link href="/">
+              <motion.a
+                style={{ cursor: "pointer" }}
+                whileHover={{ color: "#1687a7" }}
+                transition={{ duration: 0.42 }}
+              >
+                <CgProfile fontSize={32} />
               </motion.a>
             </Link>
           </Box>

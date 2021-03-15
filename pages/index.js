@@ -2,6 +2,7 @@ import Head from "next/head";
 // Custom UI components
 import Navbar from "../components/Navbar";
 import Cover from "../components/Cover";
+import FeaturesHome from "../components/FeaturesHome";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Cover />
-        <h2>I'm other section</h2>
+        <FeaturesHome />
       </main>
     </>
   );
