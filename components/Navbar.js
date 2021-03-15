@@ -16,17 +16,17 @@ export default function Navbar() {
         </Box>
         <Spacer />
         <Flex>
-          <Box p="4">
+          <Box p="4" color="white" fontWeight="medium">
             <Link href="/">
               <a>Rent</a>
             </Link>
           </Box>
-          <Box p="4">
+          <Box p="4" color="white" fontWeight="medium">
             <Link href="/">
               <a>Be a Turbler</a>
             </Link>
           </Box>
-          <Box p="4">
+          <Box p="4" color="white" fontWeight="medium">
             <Link href="/">
               <a>About</a>
             </Link>
