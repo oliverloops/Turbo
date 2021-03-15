@@ -1,10 +1,29 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Image from "next/image";
+import styled from "styled-components";
+// Custom UI components
+import Navbar from "../components/Navbar";
+
+// Style components
 
 export default function Home() {
   return (
-    <div>
-      <h1>This will be Turbo App!</h1>
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <Cover />
+      </main>
+    </>
   );
 }
+
+const Cover = () => (
+  <div>
+    <Image
+      src={"/static/cover_home.jpg"}
+      width={1200}
+      height={800}
+      alt="Home page cover"
+    />
+  </div>
+);

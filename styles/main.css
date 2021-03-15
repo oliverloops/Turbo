@@ -1,16 +1,24 @@
+/* Custom CSS properties: variables */
+:root {
+  --color-blue: #1687a7;
+  --color-white: rgb(252, 252, 252);
+  --color-purple: #7868e6;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
