@@ -3,36 +3,44 @@ import { IoLocationOutline } from "react-icons/io";
 import styled from "styled-components";
 
 //Styled components
+const Form = styled.form`
+  padding: 10px;
+`;
 
 // Lift content up!
 export default function CallToAction() {
   return (
     <Box
       p="4"
-      height="350px"
-      width="450px"
+      height="380px"
+      width="490px"
       backgroundColor="white"
       borderRadius="lg"
       boxShadow="lg"
     >
-      <form>
+      <Form>
         <Text p="3" fontWeight="bold" fontSize="2xl" color="#1687a7">
           Book in few minutes
         </Text>
-        <Flex p="3" flexDirection="column">
-          <Text>Place:</Text>
+        <Flex p="3" flexDirection="column" justifyContent="center">
+          <Text color="gray">Place:</Text>
 
-          <Input type="text" placeholder="Where to pick up?" />
+          <Input
+            mt="2"
+            type="text"
+            focusBorderColor="#1687a7"
+            placeholder="Where to pick up?"
+          />
         </Flex>
-        <Flex p="3">
-          <Flex flexDirection="column">
-            <Text>From:</Text>
-            <Input type="date" />
+        <Flex p="3" justifyContent="center">
+          <Flex mr="2" flexDirection="column">
+            <Text color="gray">From:</Text>
+            <Input mt="2" type="date" focusBorderColor="#1687a7" />
           </Flex>
 
-          <Flex flexDirection="column">
-            <Text>To:</Text>
-            <Input type="date" />
+          <Flex ml="2" flexDirection="column">
+            <Text color="gray">To:</Text>
+            <Input mt="2" type="date" focusBorderColor="#1687a7" />
           </Flex>
         </Flex>
         <Flex p="6" justifyContent="center">
@@ -40,7 +48,7 @@ export default function CallToAction() {
             Book Now
           </Button>
         </Flex>
-      </form>
+      </Form>
     </Box>
   );
 }
