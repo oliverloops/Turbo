@@ -1,21 +1,27 @@
 import { Box, Flex, Text, Input, Button } from "@chakra-ui/react";
+import { IoLocationOutline } from "react-icons/io";
 import styled from "styled-components";
 
 //Styled components
 
+// Lift content up!
 export default function CallToAction() {
   return (
     <Box
       p="4"
-      height="300px"
+      height="350px"
       width="450px"
       backgroundColor="white"
       borderRadius="lg"
       boxShadow="lg"
     >
       <form>
+        <Text p="3" fontWeight="bold" fontSize="2xl" color="#1687a7">
+          Book in few minutes
+        </Text>
         <Flex p="3" flexDirection="column">
           <Text>Place:</Text>
+
           <Input type="text" placeholder="Where to pick up?" />
         </Flex>
         <Flex p="3">
@@ -38,3 +44,5 @@ export default function CallToAction() {
     </Box>
   );
 }
+
+// Moving state down
