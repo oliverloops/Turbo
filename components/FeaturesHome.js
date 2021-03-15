@@ -7,9 +7,11 @@ const FeaturesHome = () => (
       <Text
         p="8"
         fontWeight="bold"
-        fontSize={{ base: "16px", md: "24px", lg: "30px" }}
+        fontSize={{ base: "18px", md: "26px", lg: "32px" }}
+        bgGradient="linear(to-l, purple.400, #1687a7)"
+        bgClip="text"
       >
-        Because you're not just want to book a car, <br /> you want a change
+        Because you're not just want to book a car, <br /> you want a change.
       </Text>
     </Flex>
     <Flex p="8" flexDirection="column" alignItems="center">
@@ -23,18 +25,24 @@ const FeaturesHome = () => (
           />
         </Flex>
         <Flex pl="6" flexDirection="column">
-          <Text fontWeight="bold" fontSize="xl">
-            This is a title
+          <Text fontWeight="bold" fontSize="xl" color="#1687a7">
+            We keep you safe
           </Text>
-          <Text>This a subtitle</Text>
+          <Text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />{" "}
+            Vestibulum feugiat accumsan ullamcorper.
+          </Text>
         </Flex>
       </Flex>
       <Flex p="8" justifyContent="center">
         <Flex pr="6" flexDirection="column">
-          <Text fontWeight="bold" fontSize="xl">
-            This is a title
+          <Text fontWeight="bold" fontSize="xl" color="#1687a7">
+            Discover amazing cars
           </Text>
-          <Text>This a subtitle</Text>
+          <Text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />{" "}
+            Vestibulum feugiat accumsan ullamcorper.
+          </Text>
         </Flex>
         <Flex flexDirection="column">
           <Image
@@ -55,10 +63,13 @@ const FeaturesHome = () => (
           />
         </Flex>
         <Flex pl="6" flexDirection="column">
-          <Text fontWeight="bold" fontSize="xl">
-            This is a title
+          <Text fontWeight="bold" fontSize="xl" color="#1687a7">
+            Real and trusted owners
           </Text>
-          <Text>This a subtitle</Text>
+          <Text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />{" "}
+            Vestibulum feugiat accumsan ullamcorper.
+          </Text>
         </Flex>
       </Flex>
     </Flex>
