@@ -18,7 +18,7 @@ export default function Navbar() {
         <Box p="4" color="black">
           <Heading size="md">
             <Link href="/">
-              <a>Turble ⚡️</a>
+              <a style={{ cursor: "pointer" }}>Turble ⚡️</a>
             </Link>
           </Heading>
         </Box>
@@ -29,7 +29,7 @@ export default function Navbar() {
               <motion.a
                 style={{ cursor: "pointer" }}
                 whileHover={{ color: "#1687a7" }}
-                transition={{ duration: 0.45 }}
+                transition={{ duration: 0.42 }}
               >
                 Rent
               </motion.a>

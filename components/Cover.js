@@ -22,6 +22,7 @@ const Cover = () => (
       <Text
         p="8"
         pt="16"
+        fontFamily="body"
         fontWeight="bold"
         fontSize={{ base: "24px", md: "36px", lg: "48px" }}
         color="#1687a7"
