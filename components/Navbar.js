@@ -3,30 +3,36 @@ import styled from "styled-components";
 import { Box, Flex, Heading, Spacer } from "@chakra-ui/react";
 
 // Styled components
-const StyledLink = styled(Link)`
-  padding: 0 0.8em 0 0.8em;
+const Header = styled.header`
+  position: relative;
 `;
 
 export default function Navbar() {
   return (
-    <header>
+    <Header>
       <Flex bg="#1687a7">
-        <Box p="2" color="white">
+        <Box p="4" color="white">
           <Heading size="md">Turble ⚡️</Heading>
         </Box>
         <Spacer />
-        <Box>
-          <StyledLink href="/">
-            <a>Rent</a>
-          </StyledLink>
-          <StyledLink href="/">
-            <a>Be a Turbler</a>
-          </StyledLink>
-          <StyledLink href="/">
-            <a>About</a>
-          </StyledLink>
-        </Box>
+        <Flex>
+          <Box p="4">
+            <Link href="/">
+              <a>Rent</a>
+            </Link>
+          </Box>
+          <Box p="4">
+            <Link href="/">
+              <a>Be a Turbler</a>
+            </Link>
+          </Box>
+          <Box p="4">
+            <Link href="/">
+              <a>About</a>
+            </Link>
+          </Box>
+        </Flex>
       </Flex>
-    </header>
+    </Header>
   );
 }
