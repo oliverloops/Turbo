@@ -3,6 +3,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Cover from "../components/Cover";
 import FeaturesHome from "../components/FeaturesHome";
+import Steps from "../components/Steps";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <Cover />
         <FeaturesHome />
+        <Steps />
       </main>
     </>
   );

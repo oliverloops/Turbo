@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Box, Flex, Spacer, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 
 const FeaturesHome = () => (
   <Box>
