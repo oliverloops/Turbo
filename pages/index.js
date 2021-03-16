@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Cover from "../components/Cover";
 import FeaturesHome from "../components/FeaturesHome";
 import Steps from "../components/Steps";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <FeaturesHome />
         <Steps />
       </main>
+      <Footer />
     </>
   );
 }

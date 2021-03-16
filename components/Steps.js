@@ -1,8 +1,10 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { GrMap } from "react-icons/gr";
+import { BiCalendarCheck } from "react-icons/bi";
+import { IoLogoModelS } from "react-icons/io";
 
 const Steps = () => (
-  <Box>
+  <Box height="500px">
     <Flex p="8" justifyContent="center" textAlign="center">
       <Flex flexDirection="column">
         <Text
@@ -26,28 +28,52 @@ const Steps = () => (
 
     <Flex p="8" justifyContent="space-evenly">
       <Flex flexDirection="column" alignItems="center">
-        <Box p="4" bg="white" rounded="md" boxShadow="md">
-          <GrMap style={{ width: "60px", height: "60px" }} />
+        <Box
+          p="6"
+          bg="white"
+          rounded="md"
+          boxShadow="md"
+          color="#1687a7"
+          _hover={{ boxShadow: "base" }}
+        >
+          <GrMap style={{ width: "50px", height: "50px" }} />
         </Box>
         <Text pt="3" fontWeight="bold" color="#1687a7">
           Choose a Location
         </Text>
+        <Text>This is a description</Text>
       </Flex>
       <Flex flexDirection="column" alignItems="center">
-        <Box bg="white" rounded="md" boxShadow="md">
-          Icon
+        <Box
+          p="6"
+          bg="white"
+          rounded="md"
+          boxShadow="md"
+          color="#1687a7"
+          _hover={{ boxShadow: "base" }}
+        >
+          <BiCalendarCheck style={{ width: "50px", height: "50px" }} />
         </Box>
         <Text pt="3" fontWeight="bold" color="#1687a7">
-          Select a Pick-up Date
+          Pick-up Date
         </Text>
+        <Text>This is a description</Text>
       </Flex>
       <Flex flexDirection="column" alignItems="center">
-        <Box bg="white" rounded="md" boxShadow="md">
-          Icon
+        <Box
+          p="6"
+          bg="white"
+          rounded="md"
+          boxShadow="md"
+          color="#1687a7"
+          _hover={{ boxShadow: "base" }}
+        >
+          <IoLogoModelS style={{ width: "50px", height: "50px" }} />
         </Box>
         <Text pt="3" fontWeight="bold" color="#1687a7">
-          Book your prefered car
+          Book a car
         </Text>
+        <Text>This is a description</Text>
       </Flex>
     </Flex>
   </Box>
