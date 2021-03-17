@@ -6,15 +6,15 @@ import { CgProfile } from "react-icons/cg";
 
 // Styled components
 const Header = styled.header`
-  position: absolute;
+  position: ${(props) => props.position};
   z-index: 1;
   width: 100%;
 `;
 
-export default function Navbar() {
+export default function Navbar({ position, background }) {
   return (
-    <Header>
-      <Flex bg="transparent" pr="4">
+    <Header position={position}>
+      <Flex bg={background} pr="4">
         <Box p="4" color="black">
           <Heading size="md">
             <Link href="/">
