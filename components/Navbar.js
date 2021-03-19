@@ -25,7 +25,7 @@ export default function Navbar({ position, background }) {
         <Spacer />
         <Flex>
           <Box p="4" color="black" fontWeight="medium">
-            <Link href="/search">
+            <Link href="/rentnow">
               <motion.a
                 style={{ cursor: "pointer" }}
                 whileHover={{ color: "#1687a7" }}
@@ -36,7 +36,7 @@ export default function Navbar({ position, background }) {
             </Link>
           </Box>
           <Box p="4" color="black" fontWeight="medium">
-            <Link href="/search">
+            <Link href="/rentnow">
               <motion.a
                 style={{ cursor: "pointer" }}
                 whileHover={{ color: "#1687a7" }}
@@ -47,7 +47,7 @@ export default function Navbar({ position, background }) {
             </Link>
           </Box>
           <Box p="4" color="black" fontWeight="medium">
-            <Link href="/search">
+            <Link href="/rentnow">
               <motion.a
                 style={{ cursor: "pointer" }}
                 whileHover={{ color: "#1687a7" }}

@@ -196,7 +196,12 @@ const Footer = () => (
           Turble ⚡️
         </Text>
         <Spacer />
-        <Small>©2021 Turble, Inc.</Small>
+        <Small>
+          <Flex>
+            ©2021 Turble, Inc. |&nbsp;
+            <a href="https://oliverloops.com">Created by oliverloops</a>
+          </Flex>
+        </Small>
       </Flex>
     </Flex>
   </Foot>
