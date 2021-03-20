@@ -4,12 +4,13 @@ import { Box, Text, Flex, Heading, Spacer } from "@chakra-ui/react";
 //Custom UI components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Card from "../components/rentnow/Card";
 
 // Fetcher wrapper for data fetching (swr)
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 //Context API
-const listingContext = createContext();
+export const listingContext = createContext();
 
 // Lift up content
 const RentNow = ({ listing }) => {
@@ -27,18 +28,21 @@ const RentNow = ({ listing }) => {
 //Move state down
 const Listing = () => {
   const list = useContext(listingContext);
-  const { data } = useSWR("/api/listing", fetcher, { initialData: list });
-  console.log(data.name);
+  const { data, error } = useSWR("/api/listing", fetcher, {
+    initialData: list,
+  });
+
+  if (!data) return <div>Loading, please wait...</div>;
 
   return (
     <Flex p="8">
-      <Text>Here's the listing in other component...</Text>
+      <Card />
     </Flex>
   );
 };
 
 export async function getStaticProps() {
-  const listing = await fetcher("/api/listing");
+  const listing = await fetcher("http://localhost:3000/api/listing");
 
   return {
     props: {

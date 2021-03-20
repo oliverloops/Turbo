@@ -53,7 +53,18 @@ export default function Navbar({ position, background }) {
                 whileHover={{ color: "#1687a7" }}
                 transition={{ duration: 0.42 }}
               >
-                About
+                Log in
+              </motion.a>
+            </Link>
+          </Box>
+          <Box p="4" color="black" fontWeight="medium">
+            <Link href="/rentnow">
+              <motion.a
+                style={{ cursor: "pointer" }}
+                whileHover={{ color: "#1687a7" }}
+                transition={{ duration: 0.42 }}
+              >
+                Sign up
               </motion.a>
             </Link>
           </Box>
