@@ -10,7 +10,13 @@ const Card = () => {
   const data = useContext(listingContext);
 
   return (
-    <Box borderWidth="1px" borderRadius="lg" boxShadow="md">
+    <Box
+      w={[140, 280, 350]}
+      h={[80, 180, 250]}
+      borderWidth="1px"
+      borderRadius="lg"
+      boxShadow="md"
+    >
       <Image
         src={"/static/tesla_3.jpg"}
         width={"350px"}
