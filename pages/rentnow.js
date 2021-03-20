@@ -37,6 +37,7 @@ const Listing = () => {
   return (
     <Flex p="8">
       <Card />
+      <Card />
     </Flex>
   );
 };
