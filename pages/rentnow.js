@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import useSWR from "swr";
 import { Box, Text, Flex, Heading, Spacer } from "@chakra-ui/react";
 //Custom UI components
@@ -5,18 +6,19 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 // Lift up content
-const RentNow = (props) => {
+const RentNow = ({ listing }) => {
   return (
     <>
       <Navbar position={"relative"} background={"#1687a7"} />
-      <Listing data={props.res} />
+      <Listing list={listing} />
       <Footer />
     </>
   );
 };
 
 //Move state down
-const Listing = ({ data }) => {
+const Listing = ({ list }) => {
+  const { data } = useSWR("/api/lisiting", fetcher, { initialData: list });
   console.log(data);
 
   return (
@@ -27,12 +29,13 @@ const Listing = ({ data }) => {
 };
 
 export async function getStaticProps() {
-  const data = await fetch("http://localhost:3000/api/hello");
-  const res = await data.json();
+  // Fetcher wrapper for data fetching (swr)
+  const fetcher = (...args) => fetch(...args).then((res) => res.json());
+  const listing = fetcher("/api/listing");
 
   return {
     props: {
-      res,
+      listing,
     },
     // Incremental Static Regeneration
     revalidate: 1,
