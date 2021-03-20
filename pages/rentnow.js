@@ -13,9 +13,9 @@ const RentNow = ({ listing }) => {
   return (
     <>
       <Navbar position={"relative"} background={"#1687a7"} />
-      <listingContext value={listing}>
+      <listingContext.Provider value={listing}>
         <Listing />
-      </listingContext>
+      </listingContext.Provider>
       <Footer />
     </>
   );
