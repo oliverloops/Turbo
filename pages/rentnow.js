@@ -35,9 +35,16 @@ const Listing = () => {
   if (!data) return <div>Loading, please wait...</div>;
 
   return (
-    <Flex p="10">
-      <Card />
-      <Card />
+    <Flex p="10" flexWrap="wrap">
+      <Box p="4">
+        <Card />
+      </Box>
+      <Box p="4">
+        <Card />
+      </Box>
+      <Box p="4">
+        <Card />
+      </Box>
     </Flex>
   );
 };
