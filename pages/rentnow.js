@@ -17,7 +17,7 @@ export const listingContext = createContext();
 const RentNow = ({ listing }) => {
   return (
     <>
-      <Navbar position={"relative"} background={"#1687a7"} />
+      <Navbar position={"fixed"} background={"white"} />
       <Filter />
       <listingContext.Provider value={listing}>
         <Listing />

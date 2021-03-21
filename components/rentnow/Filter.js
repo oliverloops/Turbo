@@ -4,13 +4,16 @@ const Filter = () => {
   return (
     <Flex
       w="100%"
-      h="55"
+      h="70"
       bg="white"
       boxShadow="base"
       position="fixed"
+      mt="55"
       zIndex="1"
+      borderColor="gray.200"
+      borderWidth="2px 0 0 0"
     >
-      <Flex p="2">
+      <Flex p="3">
         <Button color="purple.400" colorScheme="purple" variant="outline">
           Price
         </Button>

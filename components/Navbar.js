@@ -7,7 +7,7 @@ import { CgProfile } from "react-icons/cg";
 // Styled components
 const Header = styled.header`
   position: ${(props) => props.position};
-  z-index: 1;
+  z-index: 2;
   width: 100%;
 `;
 
