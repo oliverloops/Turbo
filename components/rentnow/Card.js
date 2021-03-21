@@ -15,7 +15,7 @@ const Card = () => {
       h={[80, 180, 250]}
       borderWidth="1px"
       borderRadius="lg"
-      boxShadow="md"
+      boxShadow="lg"
     >
       <Image
         src={"/static/tesla_3.jpg"}

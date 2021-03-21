@@ -4,6 +4,7 @@ import { Box, Text, Flex, Heading, Spacer } from "@chakra-ui/react";
 //Custom UI components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Filter from "../components/rentnow/Filter";
 import Card from "../components/rentnow/Card";
 
 // Fetcher wrapper for data fetching (swr)
@@ -17,6 +18,7 @@ const RentNow = ({ listing }) => {
   return (
     <>
       <Navbar position={"relative"} background={"#1687a7"} />
+      <Filter />
       <listingContext.Provider value={listing}>
         <Listing />
       </listingContext.Provider>
