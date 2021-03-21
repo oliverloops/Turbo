@@ -20,7 +20,7 @@ const Small = styled.small`
 
 const Footer = () => (
   <Foot>
-    <Flex flexDirection="column">
+    <Flex flexDirection="column" flexWrap="wrap">
       <Flex pt="8" pb="8">
         <Flex p="8" flexDirection="column">
           <Text color="white" fontWeight="bold">
