@@ -1,5 +1,5 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
-import { GrMap } from "react-icons/gr";
+import { BiMap } from "react-icons/bi";
 import { BiCalendarCheck } from "react-icons/bi";
 import { IoLogoModelS } from "react-icons/io";
 
@@ -36,7 +36,7 @@ const Steps = () => (
           color="#1687a7"
           _hover={{ boxShadow: "base" }}
         >
-          <GrMap style={{ width: "50px", height: "50px" }} />
+          <BiMap style={{ width: "50px", height: "50px" }} />
         </Box>
         <Text pt="3" fontWeight="bold" color="#1687a7">
           Choose a Location

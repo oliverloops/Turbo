@@ -19,16 +19,16 @@ const Card = () => {
     <Link href="#">
       <a>
         <Box
-          w={[140, 280, 330]}
+          w={[140, 280, 332]}
           h={[80, 180, 320]}
           borderWidth="1px"
           borderRadius="lg"
           boxShadow="base"
-          _hover={{ filter: "opacity(83%)" }}
+          _hover={{ filter: "opacity(85%)", transition: "filter 0.25s linear" }}
         >
           <StyledImage
             src={"/static/tesla_3.jpg"}
-            width={"330px"}
+            width={"340px"}
             height={"210px"}
             alt="An awesome electric car"
           />

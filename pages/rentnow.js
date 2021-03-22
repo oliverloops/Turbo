@@ -1,4 +1,5 @@
 import { useState, useContext, createContext } from "react";
+import dynamic from "next/dynamic";
 import useSWR from "swr";
 import { Box, Text, Flex, Heading, Spacer } from "@chakra-ui/react";
 //Custom UI components
@@ -6,6 +7,13 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Filter from "../components/rentnow/Filter";
 import Card from "../components/rentnow/Card";
+//Dynamic map component import
+const Map = dynamic(
+  () => {
+    return import("../components/rentnow/Map");
+  },
+  { ssr: false }
+);
 
 // Fetcher wrapper for data fetching (swr)
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
@@ -37,19 +45,23 @@ const Listing = () => {
   if (!data) return <div>Loading, please wait...</div>;
 
   return (
-    <Flex p="10" flexWrap="wrap" pt="17vh" pb="12vh">
-      <Box p="4">
-        <Card />
-      </Box>
-      <Box p="4">
-        <Card />
-      </Box>
-      <Box p="4">
-        <Card />
-      </Box>
-      <Box p="4">
-        <Card />
-      </Box>
+    <Flex>
+      <Flex p="10" flexWrap="wrap" pt="17vh" pb="12vh">
+        <Box p="4">
+          <Card />
+        </Box>
+        <Box p="4">
+          <Card />
+        </Box>
+        <Box p="4">
+          <Card />
+        </Box>
+        <Box p="4">
+          <Card />
+        </Box>
+      </Flex>
+      {/* Solving map displaying issue */}
+      <Map />
     </Flex>
   );
 };
