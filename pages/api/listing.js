@@ -1,6 +1,10 @@
 // API request - Logic refactored for API routes
 export async function getData() {
-  const response = await fetch("http://localhost:3000/api/listing");
+  // Check environment [dev/prod]
+  const dev = process.env.NODE_ENV !== "production";
+  const server = dev ? "http://localhost:3000" : process.env.VERCEL_URL;
+
+  const response = await fetch(`${server}/api/listing`);
   const data = await response.json();
   return data;
 }
