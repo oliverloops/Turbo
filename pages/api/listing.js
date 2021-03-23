@@ -6,9 +6,11 @@ export async function getData() {
     ? "http://localhost:3000"
     : `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`;
 
-  const response = await fetch(new URL(`/api/listing`, baseURL));
-  const data = await response.json();
-  return data;
+  const response = await fetch(new URL(`/api/listing`, baseURL))
+    .then((res) => res.json())
+    .then((data) => data);
+
+  return response;
 }
 
 export default (req, res) => {
