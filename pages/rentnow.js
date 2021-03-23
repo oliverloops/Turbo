@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Filter from "../components/rentnow/Filter";
 import Card from "../components/rentnow/Card";
+import { getData } from "./api/listing";
 //Dynamic map component import
 const Map = dynamic(
   () => {
@@ -67,8 +68,7 @@ const Listing = () => {
 };
 
 export async function getStaticProps() {
-  const res = await fetch(`http://localhost:3000/api/listing`);
-  const listing = await res.json();
+  const listing = await getData();
 
   return {
     props: {
