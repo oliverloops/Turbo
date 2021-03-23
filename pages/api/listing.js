@@ -4,7 +4,7 @@ export async function getData() {
   const dev = process.env.NEXT_PUBLIC_VERCEL_ENV !== "production";
   const baseURL = dev
     ? "http://localhost:3000"
-    : process.env.NEXT_PUBLIC_VERCEL_URL;
+    : `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`;
 
   const response = await fetch(new URL(`/api/listing`, baseURL));
   const data = await response.json();
