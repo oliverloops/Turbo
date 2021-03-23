@@ -6,7 +6,8 @@ export async function getData() {
     ? "http://localhost:3000"
     : process.env.NEXT_PUBLIC_VERCEL_URL;
 
-  const response = await fetch(`${server}/api/listing`);
+  const baseURL = "http://localhost";
+  const response = await fetch(new URL(`${server}/api/listing`, baseURL));
   const data = await response.json();
   return data;
 }
