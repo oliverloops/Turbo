@@ -1,7 +1,8 @@
 // API request - Logic refactored for API routes
 export async function getData() {
   // Check environment [dev/prod]
-  const dev = process.env.NODE_ENV !== "production";
+  const dev =
+    process.env.NODE_ENV || process.env.NEXT_PUBLIC_VERCEL_ENV !== "production";
   const server = dev
     ? "http://localhost:3000"
     : process.env.NEXT_PUBLIC_VERCEL_URL;
