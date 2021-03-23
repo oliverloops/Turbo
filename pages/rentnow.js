@@ -67,7 +67,8 @@ const Listing = () => {
 };
 
 export async function getStaticProps() {
-  const listing = await fetcher("http://localhost:3000/api/listing");
+  const res = await fetch(`${process.env.HOST}/api/listing`);
+  const listing = await res.json();
 
   return {
     props: {
