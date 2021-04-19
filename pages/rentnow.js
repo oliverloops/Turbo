@@ -61,10 +61,10 @@ const Listing = () => {
           <Card />
         </Box>
       </Flex>
-      <Box p="4">
+      <Flex p="4">
         {/* Solving map displaying issue */}
         <Map />
-      </Box>
+      </Flex>
     </Flex>
   );
 };
