@@ -47,7 +47,7 @@ const Listing = () => {
 
   return (
     <Flex>
-      <Flex p="10" flexWrap="wrap" pt="17vh" pb="12vh">
+      <Flex p="10" flexWrap="wrap" pt="17vh" pb="12vh" width="72%">
         <Box p="4">
           <Card />
         </Box>
@@ -61,8 +61,10 @@ const Listing = () => {
           <Card />
         </Box>
       </Flex>
-      {/* Solving map displaying issue */}
-      <Map />
+      <Box p="4">
+        {/* Solving map displaying issue */}
+        <Map />
+      </Box>
     </Flex>
   );
 };
