@@ -29,30 +29,39 @@ const Footer = () => (
           <Flex pt="4" flexDirection="column">
             <Link href="#">
               <motion.a
-                style={{ cursor: "pointer" }}
+                style={{
+                  cursor: "pointer",
+                  color: "#fff",
+                  paddingTop: "0.45rem",
+                }}
                 whileHover={{ color: "#1687a7" }}
                 transition={{ duration: 0.42 }}
-                style={{ color: "#fff", paddingTop: "0.45rem" }}
               >
                 About
               </motion.a>
             </Link>
             <Link href="#">
               <motion.a
-                style={{ cursor: "pointer" }}
+                style={{
+                  cursor: "pointer",
+                  color: "#fff",
+                  paddingTop: "0.45rem",
+                }}
                 whileHover={{ color: "#1687a7" }}
                 transition={{ duration: 0.42 }}
-                style={{ color: "#fff", paddingTop: "0.45rem" }}
               >
                 Policies
               </motion.a>
             </Link>
             <Link href="#">
               <motion.a
-                style={{ cursor: "pointer" }}
+                style={{
+                  cursor: "pointer",
+                  color: "#fff",
+                  paddingTop: "0.45rem",
+                }}
                 whileHover={{ color: "#1687a7" }}
                 transition={{ duration: 0.42 }}
-                style={{ color: "#fff", paddingTop: "0.45rem" }}
               >
                 Careers
               </motion.a>
@@ -67,30 +76,39 @@ const Footer = () => (
           <Flex pt="4" flexDirection="column">
             <Link href="#">
               <motion.a
-                style={{ cursor: "pointer" }}
+                style={{
+                  cursor: "pointer",
+                  color: "#fff",
+                  paddingTop: "0.45rem",
+                }}
                 whileHover={{ color: "#1687a7" }}
                 transition={{ duration: 0.42 }}
-                style={{ color: "#fff", paddingTop: "0.45rem" }}
               >
                 Book a Car
               </motion.a>
             </Link>
             <Link href="#">
               <motion.a
-                style={{ cursor: "pointer" }}
+                style={{
+                  cursor: "pointer",
+                  color: "#fff",
+                  paddingTop: "0.45rem",
+                }}
                 whileHover={{ color: "#1687a7" }}
                 transition={{ duration: 0.42 }}
-                style={{ color: "#fff", paddingTop: "0.45rem" }}
               >
                 How it works
               </motion.a>
             </Link>
             <Link href="#">
               <motion.a
-                style={{ cursor: "pointer" }}
+                style={{
+                  cursor: "pointer",
+                  color: "#fff",
+                  paddingTop: "0.45rem",
+                }}
                 whileHover={{ color: "#1687a7" }}
                 transition={{ duration: 0.42 }}
-                style={{ color: "#fff", paddingTop: "0.45rem" }}
               >
                 FAQs
               </motion.a>
@@ -105,30 +123,39 @@ const Footer = () => (
           <Flex pt="4" flexDirection="column">
             <Link href="#">
               <motion.a
-                style={{ cursor: "pointer" }}
+                style={{
+                  cursor: "pointer",
+                  color: "#fff",
+                  paddingTop: "0.45rem",
+                }}
                 whileHover={{ color: "#1687a7" }}
                 transition={{ duration: 0.42 }}
-                style={{ color: "#fff", paddingTop: "0.45rem" }}
               >
                 List your car
               </motion.a>
             </Link>
             <Link href="#">
               <motion.a
-                style={{ cursor: "pointer" }}
+                style={{
+                  cursor: "pointer",
+                  color: "#fff",
+                  paddingTop: "0.45rem",
+                }}
                 whileHover={{ color: "#1687a7" }}
                 transition={{ duration: 0.42 }}
-                style={{ color: "#fff", paddingTop: "0.45rem" }}
               >
                 Create an account
               </motion.a>
             </Link>
             <Link href="#">
               <motion.a
-                style={{ cursor: "pointer" }}
+                style={{
+                  cursor: "pointer",
+                  color: "#fff",
+                  paddingTop: "0.45rem",
+                }}
                 whileHover={{ color: "#1687a7" }}
                 transition={{ duration: 0.42 }}
-                style={{ color: "#fff", paddingTop: "0.45rem" }}
               >
                 FAQs
               </motion.a>
@@ -143,30 +170,39 @@ const Footer = () => (
           <Flex pt="4" flexDirection="column">
             <Link href="#">
               <motion.a
-                style={{ cursor: "pointer" }}
+                style={{
+                  cursor: "pointer",
+                  color: "#fff",
+                  paddingTop: "0.45rem",
+                }}
                 whileHover={{ color: "#1687a7" }}
                 transition={{ duration: 0.42 }}
-                style={{ color: "#fff", paddingTop: "0.45rem" }}
               >
                 Cars
               </motion.a>
             </Link>
             <Link href="#">
               <motion.a
-                style={{ cursor: "pointer" }}
+                style={{
+                  cursor: "pointer",
+                  color: "#fff",
+                  paddingTop: "0.45rem",
+                }}
                 whileHover={{ color: "#1687a7" }}
                 transition={{ duration: 0.42 }}
-                style={{ color: "#fff", paddingTop: "0.45rem" }}
               >
                 Trucks
               </motion.a>
             </Link>
             <Link href="#">
               <motion.a
-                style={{ cursor: "pointer" }}
+                style={{
+                  cursor: "pointer",
+                  color: "#fff",
+                  paddingTop: "0.45rem",
+                }}
                 whileHover={{ color: "#1687a7" }}
                 transition={{ duration: 0.42 }}
-                style={{ color: "#fff", paddingTop: "0.45rem" }}
               >
                 Others
               </motion.a>

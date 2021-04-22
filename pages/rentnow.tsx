@@ -17,10 +17,17 @@ const Map = dynamic(
 );
 
 // Fetcher wrapper for data fetching (swr)
-const fetcher = (...args) => fetch(...args).then((res) => res.json());
+const fetcher = async (
+  input: RequestInfo,
+  init: RequestInit,
+  ...args: any[]
+) => {
+  const res = await fetch(input, init);
+  return res.json();
+};
 
 //Context API
-export const listingContext = createContext();
+export const listingContext = createContext({});
 
 // Lift up content
 const RentNow = ({ listing }) => {
