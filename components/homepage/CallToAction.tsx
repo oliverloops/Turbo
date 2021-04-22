@@ -1,5 +1,4 @@
 import { Box, Flex, Text, Input, Button } from "@chakra-ui/react";
-import { IoLocationOutline } from "react-icons/io";
 import styled from "styled-components";
 import Link from "next/router";
 
