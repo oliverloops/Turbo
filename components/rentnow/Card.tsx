@@ -12,15 +12,8 @@ const StyledImage = styled(Image)`
   border-radius: 8px 8px 0 0;
 `;
 
-interface Data {
-  model: string;
-  price: string;
-  rating: string;
-  trips: string;
-}
-
 const Card = () => {
-  let data = useContext(listingContext);
+  let data: any = useContext(listingContext);
 
   return (
     <Link href="#">
