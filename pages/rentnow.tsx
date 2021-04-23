@@ -67,13 +67,11 @@ const Listing = () => {
         <Box p="4">
           <Card />
         </Box>
-      </Flex>
 
-      <Map>
-        <Flex p="4">
+        <Map>
           <div id="mapid"></div>
-        </Flex>
-      </Map>
+        </Map>
+      </Flex>
     </Flex>
   );
 };
